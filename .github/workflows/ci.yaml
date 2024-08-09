@@ -8,5 +8,5 @@ jobs:
       - name: hello
         run: |
           echo "Hello World"
-      - name: this will fail
-        run: exit1;
+ #     - name: this will fail            -> This code was to put error in execution
+ #       run: exit1;
