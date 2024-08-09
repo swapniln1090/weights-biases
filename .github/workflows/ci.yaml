@@ -5,8 +5,14 @@ jobs:
   My-Github-Action1:
     runs-on: windows-2019
     steps:
+      - uses: actions/checkout@v3
       - name: hello
         run: |
           echo "Hello World"
  #     - name: this will fail            -> This code was to put error in execution
  #       run: exit1;
+       
+      - name: run python script
+        run: |
+            pip install -r requirement.txt
+            python ci.py
